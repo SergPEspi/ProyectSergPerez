@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Café & Co </title>
+    <link rel="stylesheet" href="Estilos.CSS">
+</head>
+<body>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="Reserva.html">Reservación</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="seccion-contacto">
+                <h2> Contacto </h2>
+                <div class="contenedor-info">
+                    <div class="info-contacto">
+                        <h3> Información General Contacto </h3>
+                        <p><strong> Dirección </strong> Calle 101#134c-90, Bogota Colombia</p>
+                        <p><strong>Telefono </strong><a href="tel:+573115485254">+57 (311)548-5254</a></p>
+                        <p><strong> Email </strong><a href="infoCafe_co@cafeco.com">infoCafe_co@cafeco.com</a></p>
+
+                        <h3>Encuéntranos Aquí</h3>
+                        <div class="contact-form-container">
+                            <h3>Envíanos un Mensaje</h3>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="contact-name">Nombre:</label>
+                                    <input type="text" id="contact-name" name="name" required>
+                                    <span class="error-message" id="contact-name-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Correo Electrónico:</label>
+                                    <input type="email" id="contact-email" name="email" required>
+                                    <span class="error-message" id="contact-email-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message">Mensaje:</label>
+                                    <textarea id="contact-message" name="message" rows="5" required></textarea>
+                                    <span class="error-message" id="contact-message-error"></span>
+                                </div>
+                                <button type="submit">Enviar Mensaje</button>
+                            </form>
+                        
+                            <!-- Mensaje de confirmación ahora está FUERA del form -->
+                            <p id="confirmacion-contacto" class="confirmacion-mensaje" style="display: none;">
+                                ¡Mensaje enviado con éxito! Te responderemos pronto.
+                            </p>
+                        </div>
+                        
+                    </div>                   
+
+                </div>
+
+            </section>
+            
+        </main>
+        <script src="Scripts_3.js"></script>
+</body>

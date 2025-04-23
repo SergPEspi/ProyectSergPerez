@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Có</title>
+    <link rel="stylesheet" href="/Estilos.CSS">
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="/image/Logo.jpg" alt="Logopag">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="Menu.html"> Menú</a></li>
+                <li><a href="Reserva.html"> Reservación</a></li>
+                <li><a href="Galeria.html"> Galería Café & Co</a></li>
+                <li><a href="Contacto.html"> Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="Dark-mode">Modo Oscuro</button>
+    </header>
+
+    <main>
+       <section class="banner">
+        <div class="contenido-banner">
+            <h1>Bienvenido a Café & Co. <br> ¡Estamos felices de tenerte!</h1>
+            <p> Atrévete a conocer nuestros excelentes productos, contamos con todo el sabor de nuestra tierra.</p>
+            <a href="Menu.html" class="btn">Aquí te dejo nuestro Menú</a>    
+        </div>
+       </section>
+
+       <section class="carrusel">
+        <h2>Nuestra tienda</h2>
+        <div class="Contenedor-carrusel">
+            <div class="galeria-carrusel">
+                <img src="/image/carrusel 1.jpg" alt="Imagen de la tienda ambiente interior">
+                <img src="/image/carrusel 2.jpg" alt="Imagen clientes disfrutando">
+                <img src="/image/carrusel 3.jpg" alt="Vista de la barra de café">
+                <img src="/image/carrusel 4.jpg" alt="Taza de café de cerca">
+                <img src="/image/carrusel 5.jpg" alt="Clientes disfrutando de los productos">
+                <img src="/image/carrusel 6.jpg" alt="Vista del local desde el exterior con el logo visible">
+            </div>
+            <button class="btn-carrusel-anterior" aria-label="Imagen anterior">&lt;</button>
+            <button class="btn-carrusel-siguiente" aria-label="Imagen siguiente">&gt;</button>
+        </div>
+       </section>
+
+       <section class="Contador-visitas">
+        <p>Cantidad de visitas a Café & Co: <span id="contador-visitas">0</span></p>
+       </section>   
+    </main>
+
+    <footer>
+        <p>&copy;2025 Café & Co. Todos los derechos reservados</p>
+    </footer>
+
+   <script src="Scripts_2.js"></script>
+</body>
+</html>

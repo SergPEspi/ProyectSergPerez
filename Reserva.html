@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Café & Co </title>
+    <link rel="stylesheet" href="Estilos.CSS">
+</head>
+<body>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="Reserva.html">Reservación</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    <main>
+        <section class="reservacion">
+            <h2>Realiza tu Reservación</h2>
+            <form id="formulario-reserva">
+                <div class="formulario-general">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" required>
+                </div>
+                <div class="formulario-general">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" placeholder="Ingresa tu correo electrónico" id="email" required>
+                </div>
+                <div class="formulario-general">
+                    <label for="date">Fecha y Hora</label>
+                    <input type="datetime-local" id="date" required>
+                </div>
+                <div class="formulario-general">
+                    <label for="people">Número de Personas</label>
+                    <input type="number" placeholder="Cantidad de personas" id="people" min="1" required>
+                </div>
+                <button type="submit">Generar Reservación</button>
+                <p id="confirmacion" class="mensaje-confirmacion">
+                    ¡Tu reserva ha sido registrada con éxito!
+                </p>
+            </form>
+        </section>
+    </main>
+    <script src="Scrpits_1.js"></script>
+</body>
